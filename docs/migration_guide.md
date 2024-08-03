@@ -42,7 +42,7 @@ Because of confusion with `Options` defaults in bincode 1, we have made `Configu
 
 You may wish to stick with `serde` when migrating to bincode 2, for example if you are using serde-exclusive derive features such as `#[serde(deserialize_with)]`.
 
-If so, make sure to include bincode 2 with the `serde` feature enabled.
+If so, make sure to include bincode 2 with the `serde` feature enabled, and use the `bincode::serde::*` functions instead of `bincode::*` as described below:
 
 ```toml
 [dependencies]
